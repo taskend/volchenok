@@ -1,0 +1,921 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Волчонок</title>
+
+	<!-- responsive meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- master stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- responsive stylesheet -->
+	<link rel="stylesheet" href="css/responsive.css">
+
+
+
+</head>
+<body>
+
+
+	
+
+	<header class="header">
+		<div class="container">
+			<div class="logo pull-left">
+				<a href="index.html">
+					<img src="img/resources/logo.png" alt="Awesome Image"/>
+				</a>
+			</div>
+			<div class="header-right-info pull-right clearfix">
+				<div class="single-header-info">
+					<div class="icon-box">
+						<div class="inner-box">
+							<i class="flaticon-interface-2"></i>
+						</div>
+					</div>
+					<div class="content">
+						<h3>EMAIL</h3>
+						<p>peevek-pitoms@yandex.ru</p>
+					</div>
+				</div>
+				<div class="single-header-info">
+					<div class="icon-box">
+						<div class="inner-box">
+							<i class="flaticon-telephone"></i>
+						</div>
+					</div>
+					<div class="content">
+						<h3>Позвоните нам</h3>
+						<p><b>(451) 749-010-03</b></p>
+					</div>
+				</div>
+				<div class="single-header-info">
+	                <!-- Modal: donate now Starts -->
+	                
+	                <div class="modal fade" id="modal-donate-now" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	                  <div class="modal-dialog style-one" role="document">
+	                    <div class="modal-content">
+	                      <div class="modal-header">
+	                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                        <h4 class="modal-title" id="myModalLabel">Make a Donation</h4>
+	                      </div>
+	                      <div class="modal-body">
+		                    <div class="donation-form-outer">
+				            	<form action="contact.html" method="post">
+				                	
+				                    <!--Form Portlet-->
+				                    <div class="form-portlet">
+				                    	<h3>Donation Amount</h3>
+				                        
+				                        <div class="row clearfix">
+				                        	<div class="form-group col-xs-12 clearfix">
+				                            	
+				                                <div class="radio-select">
+				                                	<input type="radio" id="amount-1" name="sel-amount">
+				                                    <label for="amount-1">$10</label>
+				                                </div>
+				                                
+				                                <div class="radio-select">
+				                                	<input type="radio" checked="" id="amount-2" name="sel-amount">
+				                                    <label for="amount-2">$25</label>
+				                                </div>
+				                                
+				                                <div class="radio-select">
+				                                	<input type="radio" id="amount-3" name="sel-amount">
+				                                    <label for="amount-3">$50</label>
+				                                </div>
+				                                
+				                                <div class="radio-select">
+				                                	<input type="radio" id="amount-4" name="sel-amount">
+				                                    <label for="amount-4">$100</label>
+				                                </div>
+				                                
+				                                <div class="radio-select">
+				                                	<input type="radio" id="amount-5" name="sel-amount">
+				                                    <label for="amount-5">$150</label>
+				                                </div>
+				                                
+				                                <div class="radio-select">
+				                                	<input type="radio" id="amount-6" name="sel-amount">
+				                                    <label for="amount-6">$200</label>
+				                                </div>
+				                                
+				                                <div class="radio-select">
+				                                	OR
+				                                </div>
+				                                
+				                            </div>
+				                            
+				                            <div class="form-group  col-xs-12 padd-top-20">
+				                            	
+				                                <input type="text" placeholder="Other Amount" value="" name="other-amount">
+				                                
+				                            </div>
+				                            
+				                        </div>
+				                    </div>
+				                    
+				                    <hr>
+				                    
+				                    <!--Form Portlet-->
+				                    <div class="form-portlet">
+				                    	<h3>Billing Information</h3>
+				                        
+				                        <div class="row clearfix">
+				                            
+				                            <div class="form-group col-lg-6 col-md-6 col-xs-12">
+				                            	<div class="field-label">Card Number <span class="required">*</span></div>
+				                                <input type="text" required="" placeholder="Card Number" value="" name="name">
+				                            </div>
+				                            
+				                            <div class="form-group col-lg-6 col-md-6 col-xs-12">
+				                            	<div class="field-label">Security Code (CVC) <span class="required">*</span></div>
+				                                <input type="text" required="" placeholder="Security Code" value="" name="name">
+				                            </div>
+				                            
+				                            <div class="form-group col-lg-6 col-md-6 col-xs-12">
+				                            	<div class="field-label">Name <span class="required">*</span></div>
+				                                <input type="text" required="" placeholder="First Name" value="" name="name">
+				                            </div>
+				                            
+				                            <div class="form-group col-lg-6 col-md-6 col-xs-12">
+				                            	<div class="field-label">Email <span class="required">*</span></div>
+				                                <input type="email" required="" placeholder="Email" value="" name="name">
+				                            </div>
+				                            
+				                            <div class="form-group col-lg-6 col-md-6 col-xs-12">
+				                            	<div class="field-label">Phone <span class="required">*</span></div>
+				                                <input type="text" required="" placeholder="Phone" value="" name="name">
+				                            </div>
+				                            
+				                            <div class="form-group col-lg-6 col-md-6 col-xs-12">
+				                            	<div class="field-label">Address <span class="required">*</span></div>
+				                                <input type="text" required="" placeholder="Address 1" value="" name="name">
+				                            </div>
+				                            
+				                            <div class="form-group col-lg-6 col-md-6 col-xs-12">
+				                            	<div class="field-label">City <span class="required">*</span></div>
+				                                <select>
+				                                	<option>City</option>
+				                                    <option>City Name</option>
+				                                    <option>City Other</option>
+				                                </select>
+				                            </div>
+				                            
+				                            <div class="form-group col-lg-6 col-md-6 col-xs-12">
+				                            	<div class="field-label">Zip / Postal Code <span class="required">*</span></div>
+				                                <input type="text" required="" placeholder="Zip Code" value="" name="name">
+				                            </div>
+				                    
+						                    <hr>
+						                    
+						                    <div class="text-center"><button class="thm-btn mt_30 mb_30" type="submit">Donate Now</button></div>
+				                            
+				                        </div>
+				                    </div>
+				                    
+				                    <hr>
+				                    
+				                    <!--Form Portlet-->
+				                    <div class="form-portlet">
+				                    	<h3>Online Payment Information</h3>
+				                        
+				                        <div class="payment-option-logo"><img alt="" src="img/resources/payment-logos.png" class="img-responsive"></div>
+				                        <br>
+				                    </div>
+				                    
+				                </form>
+				            </div>
+	                      </div>
+	                    </div>
+	                  </div>
+	                </div>
+	                <!-- Modal: donate now Ends -->
+				</div>
+			</div>
+		</div>
+	</header> <!-- /.header -->
+
+
+	<nav class="mainmenu-area stricky">
+		<div class="container">
+			<div class="navigation pull-left">
+				<div class="nav-header">
+					<ul>
+						<li class="dropdown">
+							<a href="index.html">Главная</a>
+							
+						</li>
+						<li><a href="oplata.html">Пожертвовать</a></li>						
+						<li class="dropdown">
+							<a href="practika.html">Практика</a>
+							
+						</li>						
+						<li class="dropdown">
+							<a href="#">Документы</a>
+						
+						</li>
+						<li class="dropdown">
+							<a href="task.html">Вопросы</a>
+							
+						</li>
+						<li class="dropdown">
+							<a href="contact.html">Контакты</a>
+							
+						</li>
+						
+						
+						
+					</ul>
+				</div>
+				<div class="nav-footer">
+					
+				</div>
+			</div>
+			
+				
+				</form>
+			</div>
+		</div>
+	</nav> <!-- /.mainmenu-area -->
+
+
+	
+		<div id="slider1" class="rev_slider"  data-version="5.0">
+			<ul>
+				<li data-transition="parallaxvertical">
+					<img src="img/slides/1.jpg"  alt="" width="1920" height="705" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
+					<div class="tp-caption sfl tp-resizeme thm-banner-h1" 
+				        data-x="left" data-hoffset="0" 
+				        data-y="top" data-voffset="225" 
+				        data-whitespace="nowrap"
+				        data-transform_idle="o:1;" 
+				        data-transform_in="o:0" 
+				        data-transform_out="o:0" 
+				        data-start="500">
+						To feed and educate!
+				    </div>
+					<div class="tp-caption sfr tp-resizeme thm-banner-h1 heavy" 
+				        data-x="left" data-hoffset="0" 
+				        data-y="top" data-voffset="290" 
+				        data-whitespace="nowrap"
+				        data-transform_idle="o:1;" 
+				        data-transform_in="o:0" 
+				        data-transform_out="o:0" 
+				        data-start="1000">
+						We need your support
+				    </div>
+					<div class="tp-caption sfb tp-resizeme thm-banner-h3" 
+				        data-x="left" data-hoffset="0" 
+				        data-y="top" data-voffset="368" 
+				        data-whitespace="nowrap"
+				        data-transform_idle="o:1;" 
+				        data-transform_in="o:0" 
+				        data-transform_out="o:0" 
+				        data-start="1500">
+						Became a part to change the world
+				    </div>
+					<div class="tp-caption sfb tp-resizeme thm-banner-p" 
+				        data-x="left" data-hoffset="0" 
+				        data-y="top" data-voffset="430" 
+				        data-whitespace="nowrap"
+				        data-transform_idle="o:1;" 
+				        data-transform_in="o:0" 
+				        data-transform_out="o:0" 
+				        data-start="2000">
+						Our Company has a long tradition of charitable giving and <br> philanthropy. Lorem ipsum dolor sit amet.
+				    </div>
+					<div class="tp-caption sfl tp-resizeme" 
+				        data-x="left" data-hoffset="0" 
+				        data-y="top" data-voffset="505" 
+				        data-whitespace="nowrap"
+				        data-transform_idle="o:1;" 
+				        data-transform_in="o:0" 
+				        data-transform_out="o:0" 
+				        data-start="2300">
+						<a href="#" class="thm-btn">Donate Now</a>
+				    </div>
+					<div class="tp-caption sfr tp-resizeme" 
+				        data-x="left" data-hoffset="185" 
+				        data-y="top" data-voffset="505" 
+				        data-whitespace="nowrap"
+				        data-transform_idle="o:1;" 
+				        data-transform_in="o:0" 
+				        data-transform_out="o:0" 
+				        data-start="2600">
+						<a href="#" class="thm-btn inverse">Learn More</a>
+				    </div>
+				</li>
+				<li data-transition="parallaxvertical">
+					<img src="img/slides/2.jpg"  alt=""  width="1920" height="705" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="2" >
+					<div class="tp-caption sfl tp-resizeme thm-banner-h1 blue-bg" 
+				        data-x="left" data-hoffset="0" 
+				        data-y="top" data-voffset="249" 
+				        data-whitespace="nowrap"
+				        data-transform_idle="o:1;" 
+				        data-transform_in="o:0" 
+				        data-transform_out="o:0" 
+				        data-start="500">
+						To feed and educate!
+				    </div>
+					<div class="tp-caption sfr tp-resizeme thm-banner-h1 heavy black-bg" 
+				        data-x="left" data-hoffset="0" 
+				        data-y="top" data-voffset="318" 
+				        data-whitespace="nowrap"
+				        data-transform_idle="o:1;" 
+				        data-transform_in="o:0" 
+				        data-transform_out="o:0" 
+				        data-start="1000">
+						We need your support
+				    </div>
+					<div class="tp-caption sfb tp-resizeme thm-banner-h3" 
+				        data-x="left" data-hoffset="0" 
+				        data-y="top" data-voffset="386" 
+				        data-whitespace="nowrap"
+				        data-transform_idle="o:1;" 
+				        data-transform_in="o:0" 
+				        data-transform_out="o:0" 
+				        data-start="1500">
+						Became a part to change the world
+				    </div>
+					<div class="tp-caption sfl tp-resizeme" 
+				        data-x="left" data-hoffset="0" 
+				        data-y="top" data-voffset="450" 
+				        data-whitespace="nowrap"
+				        data-transform_idle="o:1;" 
+				        data-transform_in="o:0" 
+				        data-transform_out="o:0" 
+				        data-start="2300">
+						<a href="#" class="thm-btn">Donate Now</a>
+				    </div>
+					<div class="tp-caption sfr tp-resizeme" 
+				        data-x="left" data-hoffset="185" 
+				        data-y="top" data-voffset="450" 
+				        data-whitespace="nowrap"
+				        data-transform_idle="o:1;" 
+				        data-transform_in="o:0" 
+				        data-transform_out="o:0" 
+				        data-start="2600">
+						<a href="#" class="thm-btn inverse">Learn More</a>
+				    </div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+
+	<section class="call-to-action">
+		<div class="container-fluid">
+			<div class="clearfix">
+				<div class="call-to-action-corner col-md-4" >
+					<div class="single-call-to-action">
+						<div class="icon-box">
+							<div class="inner-box">
+								<i class="flaticon-circle"></i>
+							</div>						
+						</div>
+						<div class="content-box">
+							<h3>Пожертвования</h3>
+							<p>С вашей помощью мы смогли купить <br>новый вальер для животных</p>
+							<a href="oplata.html" class="thm-btn inverse">Сделать пожертвование</a>
+						</div>
+					</div>
+				</div>
+				<div class="call-to-action-center col-md-4" >
+					<div class="single-call-to-action">
+						<div class="icon-box">
+							<div class="inner-box">
+								<i class="flaticon-social"></i>
+							</div>						
+						</div>
+						<div class="content-box">
+							<h3>Практика</h3>
+							<p>Студенты ветеринары<br>проходят практики у нас в приюте</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="call-to-action-corner col-md-4" >
+					<div class="single-call-to-action">
+						<div class="icon-box">
+							<div class="inner-box">
+								<i class="flaticon-medical"></i>
+							</div>						
+						</div>
+						<div class="content-box">
+							<h3>Вам некуда деть вашего питомца?</h3>
+							<p>Невздумайте оставлять его одного в этом<br>злобном мире принесите его нам!</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="event-feature sec-padding" data-bg-color="#fafafa">
+		<div class="container">
+			<div class="row">
+	          <div class="col-sm-12 col-md-12 col-lg-6 md-col6-center">
+	            <h4 class="sec-color text-uppercase double-line line-left">Новости</h4>
+	            <div class="bx-event-carousel">
+	              <div class="event">
+	                <div class="row">
+	                  <div class="col-sm-4">
+	                    <div class="event-thumb">
+	                      <div class="thumb">
+	                        <img class="full-width" src="img/event/vak.jpg" alt="">
+	                      </div>
+	                      <ul class="event-date">
+	                        <li class="date">05</li>
+	                        <li class="month">ОКТ</li>
+	                      </ul>
+	                    </div>
+	                  </div>
+	                  <div class="col-sm-8">
+	                    <div class="event-content">
+	                      <h5 class="event-title"><a href="#">Вакцинация животных (скота)</a></h5>
+	                      <ul class="event-held list-inline">
+	                       
+	                      </ul>
+	                      <p class="mb-0">5 октября в нашем приюте-питомнике прошла бесплатная вакцинация животных от бешенства. Вакцинация животных - одно из важнейших профилактических мероприятий, позволяющее защитить их от наиболее распространенных инфекционных заболеваний.</p>
+						  
+	                    </div>
+	                  </div>
+	                </div>
+	              </div>
+	              <div class="event">
+	                <div class="row">
+	                  <div class="col-sm-4">
+	                    <div class="event-thumb">
+	                      <div class="thumb">
+	                        <img class="full-width" src="img/event/vak.jpg" alt="">
+	                      </div>
+	                      <ul class="event-date">
+	                        <li class="date">01</li>
+	                        <li class="month">ОКТ</li>
+	                      </ul>
+	                    </div>
+	                  </div>
+	                  <div class="col-sm-8">
+	                    <div class="event-content">
+	                      <h5 class="event-title"><a href="#">Бесплатная вакцинация!</a></h5>
+	                      <ul class="event-held list-inline">
+	                        
+	                      </ul>
+	                      <p class="mb-0">5 октября в нашем приюте-питомнике пройдет бесплатная вакцинация против бешенства!</p>
+	                    </div>
+	                  </div>
+	                </div>
+	              </div>
+	              <div class="event">
+	                <div class="row">
+	                  <div class="col-sm-4">
+	                    <div class="event-thumb">
+	                      <div class="thumb">
+	                        <img class="full-width" src="img/event/stud.jpg" alt="">
+	                      </div>
+	                      <ul class="event-date">
+	                        <li class="date">28</li>
+	                        <li class="month">СЕН</li>
+	                      </ul>
+	                    </div>
+	                  </div>
+	                  <div class="col-sm-8">
+	                    <div class="event-content">
+	                      <h5 class="event-title"><a href="#">Студенты заочники прошли практику</a></h5>
+	                      <ul class="event-held list-inline">
+	                       
+	                      </ul>
+	                      <p class="mb-0">5 студентов специальности 36.05.01 Ветеринария прошли практику в нашем приюте-питомнике.</p>
+	                    </div>
+	                  </div>
+	                </div>
+	              </div>
+	              <div class="event">
+	                <div class="row">
+	                  <div class="col-sm-4">
+	                    <div class="event-thumb">
+	                      <div class="thumb">
+	                        <img class="full-width" src="img/event/sen.jpg" alt="">
+	                      </div>
+	                      <ul class="event-date">
+	                        <li class="date">01</li>
+	                        <li class="month">СЕН</li>
+	                      </ul>
+	                    </div>
+	                  </div>
+	                  <div class="col-sm-8">
+	                    <div class="event-content">
+	                      <h5 class="event-title"><a href="#">С Днем Знаний!</a></h5>
+	                      <ul class="event-held list-inline">
+	                      
+	                      </ul>
+	                      <p class="mb-0">Желаем успехов в учёбе! Грызите гранит науки, занимайтесь спортом и будьте творческой личностью!</p>
+	                    </div>
+	                  </div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="col-sm-12 col-md-12 col-lg-6 md-col6-center mt-md-50">
+	            <h4 class="sec-color text-uppercase double-line line-left">Нужна ваша помощь</h4>
+	            <div class="featured-causes">
+	              <div class="row">
+	                <div class="col-sm-6">
+	                  <div class="thumb">
+	                    <img class="full-width" src="img/causes/pom1.jpg" alt="">
+	                    <div class="causes-progress">
+	                      <div class="progress-item">
+	                        <div class="progress" data-value="53">
+							  <div class="progress-bar" role="progressbar" aria-valuenow="53" aria-valuemin="0" aria-valuemax="100">
+							    <div class="value-holder"><span class="value"></span>%</div>
+							  </div>
+							</div>
+	                      </div>
+	                      <ul class="list-inline">
+	                        <li>Пожертвовано: 7890 руб</li>
+	                        <li class="text-thm pull-right">Необходимо: 15000 руб</li>
+	                      </ul>
+	                    </div>
+	                  </div>
+	                </div>
+	                <div class="col-sm-6">
+	                  <div class="causes-details">
+	                    <h3>Сбор средств для покупки вольера</h3>
+	                    <p class="p-title">Сбор средств для покупки вольера в 6 комплекс для крупных пород собак.</p>
+	                    <p>В связи с большим притоком собак крупных пород необходима постройка нового вольера.</p>
+						<a href="oplata.html" class="thm-btn inverse">Сделать пожертвование</a>
+	                   
+	                    
+	                  </div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+		</div>
+	</section>
+
+
+	<section class="recent-causes sec-padding">
+		<div class="container">
+			<div class="sec-title text-center">
+				<h2>Огромное спасибо этим людям.</h2>
+				<p>Эти люди внесли огромный вклад в развитие нашего приюта.</p>
+				<span class="decor"><span class="inner"></span></span>
+			</div>
+			<div class="row">
+	          <div class="col-sm-12 col-md-4 col-lg-4">
+	            <div class="causes sm-col5-center">
+	              <div class="thumb">
+	                <img class="full-width" alt="" src="img/causes/pom2.jpg">
+	                <div class="donate-piechart">
+	                  <div class="piechart-block">
+	                    
+	                  </div>
+	                </div>
+	              </div>
+	              <div class="causes-details clearfix">
+	                <h4 class="title"><a href="#">ИП Смородин А.В.</a></h4>
+	                <ul class="about-causes list-inline clearfix">
+	                  <li class="causes-goal"></li>
+	                </ul>
+	                <p>Спасибо предпринимателю Смородину Александру Владимировичу за покупку вольера для животных.</p>
+	                <div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="col-sm-12 col-md-4 col-lg-4">
+	            <div class="causes sm-col5-center">
+	              <div class="thumb">
+	                <img class="full-width" alt="" src="img/causes/pom3.jpg">
+	                <div class="donate-piechart">
+	                  <div class="piechart-block">
+	                    
+	                  </div>
+	                </div>
+	              </div>
+	              <div class="causes-details clearfix">
+	                <h4 class="title"><a href="#">ИП Власов М.Н.</a></h4>
+	                <ul class="about-causes list-inline clearfix">
+	                  <li class="causes-raised"></li>
+	                  <li class="causes-goal"></li>
+	                </ul>
+	                <p>За покупку 2500 кг корма для собак выражаем благодарность частному предпринимателю Максиму Николаевичу</p>
+	                <div>
+	              
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="col-sm-12 col-md-4 col-lg-4">
+	            <div class="causes sm-col5-center">
+	              <div class="thumb">
+	                <img class="full-width" alt="" src="img/causes/pom4.jpg">
+	                <div class="donate-piechart">
+	                  <div class="piechart-block">
+	                    
+	                  </div>
+	                </div>
+	              </div>
+	              <div class="causes-details clearfix">
+	                <h4 class="title"><a href="#">Низамов А.И.</a></h4>
+	                <ul class="about-causes list-inline clearfix">
+	                  <li class="causes-raised"></li>
+	                  <li class="causes-goal"></li>
+	                </ul>
+	                <p>Огромное спасибо нашему любимому Алексею Ильдаровичу за его волонтерскую деятельность. Врач ветеринар, волонтер и очень добрый человек.</p>
+	                <div>
+	                 
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+		</div>
+	
+
+
+    <section class="gallery-section pb_2">
+    	<div class="auto-container">
+			<div class="sec-title text-center">
+				<h2>Ищут хозяев</h2>
+				<p>Эти животные ищут свой дом. Они ответят вам лаской и добротой.</p>
+				<span class="decor"><span class="inner"></span></span>
+			</div>
+        </div>
+        
+        <div class="clearfix">       
+            <!--Image Box-->
+            <div class="image-box">
+                <div class="inner-box">
+                    <figure class="image"><a href="img/gallery/f1.jpg" class="lightbox-image"><img src="img/gallery/f1.jpg" alt=""></a></figure>
+                    <a href="img/gallery/f1.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
+                </div>
+            </div>
+            
+            <!--Image Box-->
+            <div class="image-box">
+                <div class="inner-box">
+                    <figure class="image"><a href="img/gallery/f2.jpg" class="lightbox-image"><img src="img/gallery/f2.jpg" alt=""></a></figure>
+                    <a href="img/gallery/f2.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
+                </div>
+            </div>
+            
+            <!--Image Box-->
+            <div class="image-box">
+                <div class="inner-box">
+                    <figure class="image"><a href="img/gallery/f3.jpg" class="lightbox-image"><img src="img/gallery/f3.jpg" alt=""></a></figure>
+                    <a href="img/gallery/f3.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
+                </div>
+            </div>
+            
+            <!--Image Box-->
+            <div class="image-box">
+                <div class="inner-box">
+                    <figure class="image"><a href="img/gallery/f4.jpg" class="lightbox-image"><img src="img/gallery/f4.jpg" alt=""></a></figure>
+                    <a href="img/gallery/f4.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
+                </div>
+            </div>
+            
+            <!--Image Box-->
+            <div class="image-box">
+                <div class="inner-box">
+                    <figure class="image"><a href="img/gallery/f5.jpg" class="lightbox-image"><img src="img/gallery/f5.jpg" alt=""></a></figure>
+                    <a href="img/gallery/f5.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
+                </div>
+            </div>
+            
+            <!--Image Box-->
+            <div class="image-box">
+                <div class="inner-box">
+                    <figure class="image"><a href="img/gallery/f6.jpg" class="lightbox-image"><img src="img/gallery/f6.jpg" alt=""></a></figure>
+                    <a href="img/gallery/f6.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
+                </div>
+            </div>
+            
+            <!--Image Box-->
+            <div class="image-box">
+                <div class="inner-box">
+                    <figure class="image"><a href="img/gallery/f7.jpg" class="lightbox-image"><img src="img/gallery/f7.jpg" alt=""></a></figure>
+                    <a href="img/gallery/f7.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
+                </div>
+            </div>
+            
+            <!--Image Box-->
+            <div class="image-box">
+                <div class="inner-box">
+                    <figure class="image"><a href="img/gallery/f8.jpg" class="lightbox-image"><img src="img/gallery/f8.jpg" alt=""></a></figure>
+                    <a href="img/gallery/f8.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+
+	<section class="footer-call-to-action">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 sm-text-center">
+					<h3>Посмотреть всех животных в приюте</h3>
+					<p>Все животные вакцинированы! Имеют паспорт прививок.</p>
+				</div>
+				<div class="col-md-3 text-right sm-text-center">
+					<a href="#" class="thm-btn inverse mt-sm-15">Смотреть</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="home-serivce sec-padding">
+		<div class="container">
+			<div class="sec-title text-center">
+				<h2>"Приют для животных "Волчонок"</h2>
+				<p></p>
+				<span class="decor"><span class="inner"></span></span>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="single-service-home">
+						<div class="icon-box">
+							<div class="inner-box">
+								<i class="flaticon-gesture-1"></i>
+							</div>
+						</div>
+						<div class="content">
+							<h3>80000</h3>
+							<p>Именно столько вы пожертвовали за год. <br>Благодоря вам мы улучшаем условия<br>в нашем приюте</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="single-service-home">
+						<div class="icon-box">
+							<div class="inner-box">
+								<i class="flaticon-people-1"></i>
+							</div>
+						</div>
+						<div class="content">
+							<h3>156</h3>
+							<p>Столько собак поводырей было обучено<br>кинологами </p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="single-service-home">
+						<div class="icon-box">
+							<div class="inner-box">
+								<i class="flaticon-hand"></i>
+							</div>
+						</div>
+						<div class="content">
+							<h3>456</h3>
+							<p>Собак нашли свой дом и хозяев за текущий год<br></p>
+						
+						</div>
+					</div>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+	</section>
+
+
+	<section class="fact-counter-wrapper sec-padding parallax-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12 md-text-center">
+					<h2>Мы работаем уже более<b> 6 лет</b> <br>колоссальный опыт в сфере<br>кинологии и ветеринарии</h2>
+					
+				</div>
+				<div class="col-lg-6 col-md-12 md-text-center">
+					
+					<div class="single-fact">
+						<div class="icon-box">
+							<i class="flaticon-people-3"></i>
+						</div>
+						<span class="timer" data-from="10" data-to="2200" data-speed="5000" data-refresh-interval="50">156</span>
+						<p>Счастливых хозяев</p>
+					</div>
+					<div class="single-fact">
+						<div class="icon-box">
+							<i class="flaticon-hands"></i>
+						</div>
+						<span class="timer" data-from="10" data-to="156" data-speed="5000" data-refresh-interval="50">2200</span>
+						<p>Обученных собак поводырей </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	
+
+
+	
+		
+	</section>
+
+
+	
+		
+
+
+	
+	
+	<footer class="footer sec-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="footer-widget about-widget">
+						<a href="#">
+							<img src="img/resources/footer-logo.png" alt="Awesome Image"/>
+						</a>
+						<p>Собачий приют "Волчонок"</p>
+						<ul class="contact">
+							<li><i class="fa fa-map-marker"></i> <span>Пеевек, ул. Либнехта 60-б РФ.</span></li>
+							<li><i class="fa fa-phone"></i> <span>(451) 749-010-03</span></li>
+							<li><i class="fa fa-envelope-o"></i> <span>peevek-pitoms@yandex.ru</span></li>
+						</ul>
+						
+					</div>
+				</div>
+				
+				
+		</div>
+	</footer>
+
+
+	<section class="footer-bottom">
+		<div class="container text-center">
+			<p>Theme Created By <a href="#">TEMPLATE PATH</a> with love</p>
+		</div>
+	</section>
+
+
+	<!-- main jQuery -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- bx slider -->
+	<script src="js/jquery.bxslider.min.js"></script>
+	<!-- owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- validate -->
+	<script src="js/jquery-parallax.js"></script>
+	<!-- validate -->
+	<script src="js/validate.js"></script>
+	<!-- mixit up -->
+	<script src="js/jquery.mixitup.min.js"></script>
+	<!-- fancybox -->
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<!-- easing -->
+	<script src="js/jquery.easing.min.js"></script>
+	<!-- circle progress -->
+	<script src="js/circle-progress.js"></script>
+	<!-- appear js -->
+	<script src="js/jquery.appear.js"></script>
+	<!-- count to -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- gmap helper -->
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<!-- gmap main script -->
+	<script src="js/gmap.js"></script>
+
+	<!-- isotope script -->
+	<script src="js/isotope.pkgd.min.js"></script>
+	<!-- jQuery ui js -->
+	<script src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
+	
+	<!-- revolution scripts -->
+
+	<script src="revolution/js/jquery.themepunch.tools.min.js"></script>
+	<script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+
+	<!-- thm custom script -->
+	<script src="js/custom.js"></script>
+
+
+</body>
+</html>
